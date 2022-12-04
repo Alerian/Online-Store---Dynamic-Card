@@ -1,6 +1,4 @@
-const console = window.console;
 const products= document.querySelector('.dynamicProducts');
-const finalCard=document.querySelector('.FinalCard');
 
 //Base form 
 const nameA= document.querySelector('#typeName');
@@ -16,8 +14,6 @@ const consoleB = document.querySelector('#conso');
 const priceB = document.querySelector('#price');
 
 //Input to Preview
-const upload= document.querySelector("#upload");
-
 products.addEventListener("input", () =>{
 nameB.textContent = nameA.value;
 priceB.textContent = "£"+ priceA.value;
@@ -40,7 +36,6 @@ function previewFile() {
   const reader = new FileReader();
 
   reader.addEventListener("load", () => {
-    // convert image file to base64 string
     preview.src = reader.result;
   }, false);
 
@@ -48,3 +43,13 @@ function previewFile() {
     reader.readAsDataURL(file);
   }
 }
+
+//Upload a child version of the card to the Homepage
+
+const upload= document.querySelector("#upload");
+const storedGames = document.querySelector(".storedItemsGames");
+const finalCard = document.querySelector('.FinalCard');
+
+upload.addEventListener("click", () => {
+  storedGames.insertAdjacentHTML(afterend,finalCard);
+});

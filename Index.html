@@ -4,44 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics</title>
+    <title>Electronics Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Electronics Store</h1>
-    <h2>Products</h2>
-
-<!------Dynamic Card creation for Video Game products---->
-    <form class="dynamicProducts">
-        <label>Name:</label>
-        <input id="typeName" type="text"></input>
-        <br>
-        <label>Price:</label>
-        <input id="typePrice" type="number" placeholder="£"></input>
-        <br>
-        <label>Image:</label>
-        <input id="typeImage" type="file" accept="image/*" onchange="previewFile()"></input>
-        <br><br>
-        <label>Consoles:</label>
-        <input type="radio" name="product" id="Xbox"  value="Xbox" checked></input>
-        <label>Xbox</label>
-        <input type="radio" name="product" id="PS"  value="PlayStation"></input>
-        <label>PlayStation</label>
-        <input type="radio" name="product" id="Nintendo" value="Nintendo"></input>
-        <label>Nintendo</label>
-    </form>
-
-<h3>Final Product</h3>
-<button id="upload">Upload</button>
-<br><br> 
-    <div class="FinalCard">
-        <img id="image" style="list-style:none"></li>
-        <ul class="cardDetail">
-        <li id="name"></li>
-        <li id="conso"></li>
-        <li id="price"></li>
-    </ul>
-    </div> 
+    <h1>Electronics</h1>
+    <h2>Menu</h2><a href="./service.html">Service</a>
+    
+    <div class="videoGames">Video Games</div>
+    <section class="storedItemsGames"> All Games 
+        
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

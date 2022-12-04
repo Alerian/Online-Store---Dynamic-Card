@@ -1,3 +1,28 @@
+/* HOME PAGE*/
+h1{
+    font-size:60px;
+    text-align: center;
+    font-family:sans-serif
+}
+h2{
+    font-size:30px;
+    text-align: left;
+    font-family:sans-serif
+}
+.videoGames{
+    font-size:30px;
+    text-align: left;
+    font-family:sans-serif
+}
+.storedItemsGames{
+    background-color: rgba(209, 209, 209, 0.363);
+    display:flex;
+    width:100%;
+    height:100%;
+}
+
+
+/*----------------------------------SERVICES---------------------------------------*/
 /* FORM DISPLAY*/
 .productContainer{
     background-color: rgb(255, 255, 255);
@@ -33,13 +58,15 @@
 
 }
 #image{
-    width: 100%;
-    height:200px;
-    border: 1px solid black;
+    width:90%;
+    height:50%;
+    padding-top:20px;
     border-radius: 3px;
     background-size:cover;
 }
 .cardDetail{
+    position:relative;
+    top:20px;
     padding:0px;
     margin:0px;
 }
